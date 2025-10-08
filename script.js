@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const username = document.getElementById("username").value.trim();
       const password = document.getElementById("password").value.trim();
 
-      if (username === "admin" && password === "12345") {
+      if (username === "" && password === "") {
         localStorage.setItem("isLoggedIn", "true");
         document.body.classList.add("fade-out");
         setTimeout(() => (window.location.href = "dashboard.html"), 300);

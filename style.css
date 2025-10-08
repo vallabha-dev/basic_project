@@ -18,20 +18,20 @@ body {
   max-width: 400px;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgb(14, 3, 3);
+  box-shadow: 0 4px 20px rgb(18, 17, 17);
   text-align: center;
   background-color: rgba(243, 243, 238, 0.949);  /* semi-transparent dark overlay so text is readable */
   backdrop-filter: blur(8px);
 }
 .login-container {
-  width: 90%;
-  max-width: 400px;
-  padding: 40px;
+  width: 70%;
+  max-width: 300px;
+  padding: 15px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
   text-align: center;
-  background-color: rgba(243, 243, 238, 0.949);  /* semi-transparent dark overlay so text is readable */
-  backdrop-filter: blur(8px);  /* You can override or add styles specific to login */
+  background-color: rgba(229, 205, 116, 0.704);  /* semi-transparent dark overlay so text is readable */
+  backdrop-filter: blur(10px);  /* You can override or add styles specific to login */
 }
 
 .dashboard {
@@ -45,21 +45,21 @@ form {
 }
 
 input {
-  padding: 10px;
+  padding: 07px;
   border-radius: 10px;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 button {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 7px;
+  padding: 7px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #3421c2;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
@@ -70,7 +70,7 @@ button:hover {
 }
 
 .error {
-  color: #ff7675;
+  color: #df1f1f;
   font-size: 14px;
   height: 18px;
 }
@@ -86,18 +86,18 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(250, 254, 255, 0.1);
+  background-color: rgba(241, 217, 147, 0.96);
   border-radius: 8px;
   overflow: hidden;
 }
 
 th, td {
   padding: 12px;
-  border-bottom: 1px solid rgb(236, 233, 233);
+  border-bottom: 1px solid rgb(178, 169, 169);
 }
 
 th {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(243, 128, 6, 0.892);
 }
 
 td {
@@ -114,6 +114,6 @@ td {
 
 /* Animation */
 body.fade-out {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 100;
+  transition: opacity 0.5s ease;
 }
