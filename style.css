@@ -5,23 +5,56 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #74b9ff, #a29bfe);
-  color: #fff;
-  transition: background 0.5s ease;
+  padding: 0;
+  background-image: url('https://www.univariety.com/blog/wp-content/uploads/2014/08/motivational-goals.jpg');
+  background-size: cover;          /* ensures it covers full viewport */
+  background-position: center;     /* center the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;    /* background stays fixed when scrolling */
 }
 
 .container {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 400px;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgb(14, 3, 3);
+  text-align: center;
+  background-color: rgba(243, 243, 238, 0.949);  /* semi-transparent dark overlay so text is readable */
   backdrop-filter: blur(8px);
+}
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+  text-align: center;
+  background-color: rgba(243, 243, 238, 0.949);  /* semi-transparent dark overlay so text is readable */
+  backdrop-filter: blur(8px);  /* You can override or add styles specific to login */
+}
+
+.dashboard {
+  max-width: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 10px;
   border: none;
   border-radius: 8px;
   background-color: #6c5ce7;
@@ -34,4 +67,53 @@ button {
 button:hover {
   transform: scale(1.05);
   background-color: #341f97;
+}
+
+.error {
+  color: #ff7675;
+  font-size: 14px;
+  height: 18px;
+}
+
+/* Dashboard styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(250, 254, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid rgb(236, 233, 233);
+}
+
+th {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+td {
+  text-align: center;
+}
+
+.status-active {
+  color: #084515;
+}
+
+.status-inactive {
+  color: #eb3006;
+}
+
+/* Animation */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
